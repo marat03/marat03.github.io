@@ -56,12 +56,12 @@ footer {
   
 @font-face {
     font-family: "Geometria Bold";
-    src: url("fonts/Geometria-Bold.woff")
+    src: url("../fonts/Geometria-Bold.woff")
 }
 
 @font-face {
     font-family: "Geometria";
-    src: url("fonts/Geometria-Medium.woff")
+    src: url("../fonts/Geometria-Medium.woff")
 }
 
 .wrapper {
