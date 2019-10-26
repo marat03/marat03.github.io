@@ -1,0 +1,331 @@
+  html,
+  body {
+    cursor: default;
+    text-decoration: none;
+    margin: 0;
+    font-size: 14px;
+    color: #fafbfc;
+    font-family: "Geometria";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;  
+    height: 100%;
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: normal;
+  }
+  
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+ul {
+    padding: 0;
+    margin: 0;  
+}
+li {
+      list-style: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+  }
+  
+a {
+    text-decoration: none;
+    color: #fafbfc;
+  }
+  
+footer {
+    position: relative;
+  }
+  
+* {
+    box-sizing: border-box;
+  }
+  
+@font-face {
+    font-family: "Geometria Bold";
+    src: url("/fonts/Geometria-Bold.ttf")
+}
+
+@font-face {
+    font-family: "Geometria";
+    src: url("/fonts/Geometria-Medium.ttf")
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: #121212;
+    height: 100vh;
+}
+
+.container {
+    width: 1455px;
+    margin: 0 auto;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.header {
+    padding-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+.header__left {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 100px;
+    top: 100px
+}
+
+.logo {
+    width: 121px;
+    height: 25px
+}
+
+.header__right {
+    padding-right: 170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-family: "Geometria"
+}
+
+.phone {
+    font-size: 18px;
+    letter-spacing: 0.08em;
+    line-height: 20px
+}
+
+.first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.content {
+    position: absolute;
+    bottom: 350px;
+    z-index: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 575px
+}
+
+.content__title {
+    opacity: 0;
+    font-family: "Geometria Bold";
+    font-style: normal;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    margin: 0 auto;
+    position: relative
+}
+
+.content__subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    opacity: 0;
+    padding-top: 60px;
+    width: 195px
+}
+
+.project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none
+}
+
+.plus {
+    padding-right: 10px
+}
+
+.subtitle {
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 92.3%;
+    letter-spacing: 0.02em
+}
+
+.circles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.circle-1 {
+    opacity: 0;
+    position: absolute;
+    width: 740px;
+    height: 740px;
+    left: 458px;
+    top: 90px
+}
+
+.circle-2 {
+    opacity: 0;
+    position: absolute;
+    width: 542px;
+    height: 542px;
+    left: 960px;
+    top: 199px
+}
+
+.circle-3 {
+    opacity: 0;
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    left: 1381px;
+    top: 339px
+}
+
+.arc-1 {
+    opacity: 0;
+    position: absolute;
+    width: 271px;
+    height: 542px;
+    left: 1231px;
+    top: 199px
+}
+
+.arc-2 {
+    opacity: 0;
+    position: absolute;
+    width: 130px;
+    height: 260px;
+    left: 1516px;
+    top: 339px
+}
+
+.rectangle {
+    position: absolute;
+    width: 332px;
+    height: 24px;
+    left: 408px;
+    top: 460px;
+    background: -webkit-gradient(linear, right top, left top, from(#F05347), color-stop(41.82%, #2D2D2D), color-stop(96.73%, #121212));
+    background: -webkit-linear-gradient(right, #F05347 0%, #2D2D2D 41.82%, #121212 96.73%);
+    background: -o-linear-gradient(right, #F05347 0%, #2D2D2D 41.82%, #121212 96.73%);
+    background: linear-gradient(270deg, #F05347 0%, #2D2D2D 41.82%, #121212 96.73%)
+}
+
+.footer {
+    width: inherit;
+    bottom: 100px;
+    position: absolute;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.line{
+    margin-left: 80px;
+}
+
+.contacts__mail{
+    margin-left: 80px;
+}
+
+.contacts__us{
+    letter-spacing: 1px;
+    font-family: "Geometria";
+}
+
+.mail {
+    letter-spacing: 1px;
+    text-decoration: none
+}
+
+.socials__list {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none
+}
+
+.socials__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: "Geometria"
+}
+
+.socials__link:first-child {
+    margin-left: 70px
+}
+
+.title {
+    letter-spacing: 1px;
+    color: #838383;
+    font-family: "Geometria"
+}
+
+.title_left {
+    padding-left: 20px
+}
