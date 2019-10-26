@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <title>Equium - Dietary Supplement</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="leftnav">
+            <div class="leftnav__content">
+                <a href="/?content" class="logo-link">
+                    <img src="/svg/Title.svg" alt="Equium logo">
+                </a>
+                <a href="#" class="button button__left">
+                    <div class="button__title">Get Equium</div>
+                </a>
+                <div class="contacts-menu">
+                    <ul class="contacts-menu__list">
+                        <li class="contacts-menu__item">
+                            <a href="" class="contacts-menu__link">Contacts</a>
+                        </li>
+                        <li class="contacts-menu__item">
+                            <a href="" class="contacts-menu__link">Shipping & Returns</a>
+                        </li>
+                        <li class="contacts-menu__item">
+                            <a href="" class="contacts-menu__link">Privacy policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <section class="section hero">
+                <div class="container-hero">
+                    <div class="container-left">
+                        <a href="#" class="container__title container__title_left">click</a>
+                        <a href="#" class="container__title container__title_right">on me</a>
+                        <a href="#" class="item">
+                            <img src="/img/Equium.png" class="item__img" alt="Equium tin">
+                        </a>
+                    </div>
+                    <div class="container-right">
+                        <h1 class="title">№1 Remedy for those living a fast-paced lifestyle</h1>
+                        <div class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <div class="menu__item-line">
+                                        <img src="/svg/Line.svg" alt="line">
+                                    </div>
+                                    <span>Helps relieve stress and anxiety</span>
+                                </li>
+                                <li class="menu__item">
+                                    <div class="menu__item-line">
+                                        <img src="/svg/Line.svg" alt="line">
+                                    </div>
+                                    <span>May keep depression at bay</span>
+                                </li>
+                                <li class="menu__item">
+                                    <div class="menu__item-line">
+                                        <img src="/svg/Line.svg" alt="line">
+                                    </div>
+                                    <span>Powerful formula avaliable over-the-counter</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="description">This innovative product is composed of 6 natural ingredients that
+                            harmonize your mind and body.</div>
+                        <a href="#" class="button button__hero">
+                            <div class="button__title">Get Equium</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+        $('.item').animate({ 'opacity': '1' }, 800);
+        $('.leftnav__content').delay(5000).animate({ 'opacity': '1' }, 800);
+        $('.container-right').delay(5000).animate({ 'opacity': '1' }, 800);
+        TweenMax.to('.leftnav', 2, { left: "0px", delay: 2 });
+        TweenMax.to('.container__title', 2, { opacity: 1, delay: 5 });
+        TweenMax.to('.container__title_left', 2, { left: '0', delay: 5 });
+        TweenMax.to('.container__title_right', 2, { left: '400px', delay: 5 });
+        TweenMax.to('.item', 2, { x: "-170px", delay: 2 });
+    </script>
+</body>
+
+</html>
