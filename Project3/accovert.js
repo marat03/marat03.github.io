@@ -1,6 +1,6 @@
-const items = document.querySelectorAll ('.accordeon__item');
+const itemz = document.querySelectorAll ('.accordeon__item');
 
-for (item of items) {
+for (item of itemz) {
     item.addEventListener ('click', e => {
         const curItem = e.currentTarget;
         const content = curItem.querySelector(".accordeon__label");
