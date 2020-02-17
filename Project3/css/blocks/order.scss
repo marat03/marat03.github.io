@@ -1,6 +1,6 @@
 .order{
     display: flex;
-    background: url(section_order/logos.png), url(section_order/bg.jpg);
+    background: url(/Project3/section_order/logos.png), url(/Project3/section_order/bg.jpg);
     background-size: cover;
     background-position:center center;
     background-repeat: no-repeat no-repeat;
@@ -138,7 +138,7 @@
     &::before{
         content: "";
         display: flex;
-        background-image: url(icons/checked.png);
+        background-image: url(/Project3/icons/checked.png);
         width: rem(13px);
         height: rem(13px);
         visibility: hidden;
