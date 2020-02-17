@@ -1,0 +1,20 @@
+.button{
+    border-radius: 5px;
+    font-family: 'Ubuntu';
+    padding: 9px 16px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 13px;
+    font-weight: 500;
+    color: #ffffff;
+    border: none;
+    outline: none;
+}
+
+.button_bg-orange{
+    background-color: #e45028;
+    &:hover{
+    background-color: #c1401e;
+    }
+}

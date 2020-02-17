@@ -1,0 +1,47 @@
+.fixed-menu{
+    position: fixed;
+    top: 100px;
+    right: 50px;  
+    z-index: 100;
+    @include tablets{
+        display: none;
+    }
+}
+
+.fixed__list{
+    flex-direction: column;  
+}
+
+.fixed-menu__item{
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+
+.fixed-menu .active .fixed-menu__link{
+    border-color: #fff;
+}
+
+.fixed-menu__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    
+    &::before{
+    content: "";
+    display: flex;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    }
+
+    &:hover{
+    border: 1px solid #fff;
+    }
+}
+

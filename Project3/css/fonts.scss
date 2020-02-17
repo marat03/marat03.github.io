@@ -1,0 +1,58 @@
+@font-face {
+	font-family: 'Gagalin';
+	src: url('../fonts/Gagalin/Gagalin-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lifehack';
+	src: url('../fonts/Lifehack/Lifehack-Medium.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu/Ubuntu-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu/Ubuntu-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu/Ubuntu-B.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@mixin gagalin() {
+	font-family: 'Gagalin', Helvetica, sans-serif;
+}
+
+@mixin ubuntu($style: light) {
+	font-family: 'Ubuntu', Helvetica, sans-serif;
+
+	@if $style == light {
+		font-weight: 300;
+	}
+
+	@if $style == medium {
+		font-weight: 500;
+	}
+
+	@if $style == bold {
+		font-weight: bold;
+	}
+}
+
+@mixin lifehack() {
+	font-family: 'Lifehack';
+}

@@ -1,0 +1,88 @@
+.best{
+    background: url(/section_best/bg/bg.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.best__container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.best__heading{
+    margin-bottom: rem(31px);
+}
+
+.best__heading-title{
+    color: #2f3234;
+}
+
+.best__list{
+    display: flex;  
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+    @include phones{
+        flex-direction: column;
+    }
+}
+
+.best__item{
+    flex: 1;
+    padding: 0 rem(10px);
+    @include phones{
+        flex-direction: row;
+        display: flex;
+        margin-bottom: rem(40px);
+    }
+}
+
+.best__icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(28px);
+    @include phones{
+        margin-right: 20px;
+    }
+}
+
+.best__icon-img{
+    @include phones{
+        width: rem(97px);
+        height: rem(89px);
+    }
+}
+
+.best__desc{
+    color: #2f3234;
+    text-align: center;
+    @include phones{
+        text-align: left;
+    }
+}
+
+.best__title{
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+    font-size: rem(24px);
+    font-family: 'Lifehack';
+    margin-bottom: rem(14px);
+    letter-spacing: rem(-0.6px);
+    line-height: rem(28.14px);
+    @include phones{
+        justify-content: flex-start;
+    }
+}
+
+.best__content{
+    opacity: 0.8;
+    line-height: rem(24px);
+    font-size: rem(14px);
+    font-family: 'Ubuntu';
+    @include ubuntu($style: light);
+}
