@@ -1,2 +1,0 @@
-.button{display:-webkit-box;display:-ms-flexbox;display:flex;border-radius:5px;font-family:'Ubuntu';padding:8px 15px;text-transform:uppercase;font-style:normal;font-stretch:normal;margin-left:20px;font-size:13px;font-weight:500;margin:auto}.button_bg-orange{color:#ffffff;background-color:#e45028}.button_bg-orange:hover{background-color:#c1401e}
-/*# sourceMappingURL=btn.css.map */
