@@ -1,6 +1,6 @@
 const left = document.querySelector("#left");
 const right = document.querySelector("#right");
-const item = document.querySelector("#items");
+const point = document.querySelector("#items");
 
 const step = items.firstElementChild.getBoundingClientRect().width;
 const slidesInView = 1;
@@ -11,7 +11,7 @@ let currentRight = 0;
 right.addEventListener('click', e =>{
   if (currentRight < maxRight) {
     currentRight += step;
-    item.style.right = `${currentRight}px`;
+    point.style.right = `${currentRight}px`;
   } else {
     currentRight = 0;
     items.style.right = 0;
@@ -22,7 +22,7 @@ right.addEventListener('click', e =>{
 left.addEventListener('click', e =>{
   if (currentRight > 0){
     currentRight -= step;
-    item.style.right = `${currentRight}px`;
+    point.style.right = `${currentRight}px`;
   } else {
     currentRight = maxRight;
     items.style.right = maxRight + `px`;
