@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mr. Burger - лучшие натуральные бургеры</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link rel="shortcut icon" href="/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="maincontent">
+            <section class="hero section active">
+                <div class="container hero__container">
+                    <header class="header">
+                        <div class="main-logo">
+                            <img src="/icons/logo.svg" alt="Mr.Burger" class="main-logo__img">
+                        </div>
+                        <div class="header__menu">
+                            <div class="nav-menu">
+                                <ul class="menu-list">
+                                    <li class="menu-list__item"><a href="/" class="menu-list__link">О нас</a></li>
+                                    <li class="menu-list__item"><a href="/" class="menu-list__link">Бургеры</a></li>
+                                    <li class="menu-list__item"><a href="/" class="menu-list__link">Команда</a></li>
+                                    <li class="menu-list__item"><a href="/" class="menu-list__link">Меню</a></li>
+                                    <li class="menu-list__item"><a href="/" class="menu-list__link">Отзывы</a></li>
+                                    <li class="menu-list__item"><a href="/" class="menu-list__link">Как мы работаем</a>
+                                    </li>
+                                    <li class="menu-list__item"><a href="/" class="menu-list__link">Контакты</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__order">
+                                <a href="#" class="button button_bg-orange">Заказать</a>
+                            </div>
+                            <a class="hamburger-menu-link" href="">
+                                <div class="hamburger-menu-link__bars"></div>
+                            </a>
+                        </div>
+                    </header>
+                    <div class="hero__natural">
+                        <div class="hero__natural-img">
+                            <img src="/section_hero/drops.png" alt="Beef Burger" class="hero__burger-img">
+                        </div>
+                        <div class="hero__content-text">
+                            <h1 class=" title hero__content-title">Мы делаем</h1>
+                            <p class="hero__content-desc">натуральные бургеры</p>
+                        </div>
+                    </div>
+                    <div class="hero__arrow">
+                        <a href="#" class="arrow-down">
+                            <svg class="arrow-down__icon">
+                                <use xlink:href="./icons/arrow-scroll.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="best section">
+                <div class="container best__container">
+                    <div class="best__heading">
+                        <h2 class=" title best__heading-title">Мы лучшие</h2>
+                    </div>
+                    <ul class="best__list">
+                        <li class="best__item">
+                            <div class="best__icon">
+                                <img src="/icons/meat.svg" alt="" class="best__icon-img">
+                            </div>
+                            <div class="best__desc">
+                                <h4 class="best__title">100% свежее мясо</h4>
+                                <p class="best__content">Драма пердставляет собой деструктивный смысл. Анапест
+                                    пердставляет
+                                    собой анапест.
+                                    Ямб неравномерен.</p>
+                            </div>
+                        </li>
+                        <li class="best__item">
+                            <div class="best__icon">
+                                <img src="/icons/hand.svg" alt="" class="best__icon-img">
+                            </div>
+                            <div class="best__desc">
+                                <h4 class="best__title">Ручная сборка</h4>
+                                <p class="best__content">Драма пердставляет собой деструктивный смысл. Анапест
+                                    пердставляет
+                                    собой анапест.
+                                    Первое полустишье притягивает сюжетный реформаторский пафос.</p>
+                            </div>
+                        </li>
+                        <li class="best__item">
+                            <div class="best__icon">
+                                <img src="/icons/natural.svg" alt="" class="best__icon-img">
+                            </div>
+                            <div class="best__desc">
+                                <h4 class="best__title">Натуральные ингридиенты</h4>
+                                <p class="best__content">Драма пердставляет собой деструктивный смысл. Анапест
+                                    пердставляет
+                                    собой анапест.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="burgers section">
+                <div class="container">
+                    <div class="slider">
+                        <ul class="slider__list" id="items">
+                            <li class="slider__list-item slider__list-item_active">
+                                <div class="burgers__wrap">
+                                    <div class="burgers-block">
+                                        <div class="component">
+                                            <svg class="component__icon">
+                                                <use xlink:href="/icons/burger.svg#burger"></use>
+                                            </svg>
+                                            <span class="component__text">Состав</span>
+                                            <div class="component__drop">
+                                                <ul class="list__drop">
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/beef.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Говядина</div>
+                                                            <div class="list__drop-weight">300 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/buns.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Булочки</div>
+                                                            <div class="list__drop-weight">100 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/salad.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Зелень</div>
+                                                            <div class="list__drop-weight">70 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/sauce.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Соус</div>
+                                                            <div class="list__drop-weight">150 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/cucumber.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Овощи</div>
+                                                            <div class="list__drop-weight">200 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/cheese.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Сыр</div>
+                                                            <div class="list__drop-weight">80 г</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="burgers-image">
+                                            <img src="./section_burgers/burger2.png" alt="Dark Beef Burger"
+                                                class="burgers-image-img">
+                                        </div>
+                                        <div class="kcal">
+                                            <div class="kcal__img">
+                                                <span class="kcal__weight">1200</span>
+                                            </div>
+                                            <span class="kcal__text">ккал</span>
+                                        </div>
+                                    </div>
+                                    <div class="burgers-text">
+                                        <h2 class="title burgers-text__title">DARK BEEF BURGER</h2>
+                                        <p class="burgers__content-desc">Ваш старый добрый знакомый, с рубленым
+                                            бифштексом
+                                            из 100%
+                                            говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами,
+                                            луком,
+                                            салатом и
+                                            соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                                        <div class="burgers__order">
+                                            <h2 class="title burgers__price">500</h2>
+                                            <p class="burgers__currency">рублей</p>
+                                            <div class="burgers__btn">
+                                                <a href="#" class="button button_bg-orange">Заказать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="slider__list-item">
+                                <div class="burgers__wrap">
+                                    <div class="burgers-block">
+                                        <div class="component">
+                                            <svg class="component__icon">
+                                                <use xlink:href="/icons/burger.svg#burger"></use>
+                                            </svg>
+                                            <span class="component__text">Состав</span>
+                                            <div class="component__drop">
+                                                <ul class="list__drop">
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/beef.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Говядина</div>
+                                                            <div class="list__drop-weight">400 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/buns.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Булочки</div>
+                                                            <div class="list__drop-weight">100 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/salad.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Зелень</div>
+                                                            <div class="list__drop-weight">50 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/sauce.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Соус</div>
+                                                            <div class="list__drop-weight">150 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/cucumber.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Овощи</div>
+                                                            <div class="list__drop-weight">200 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/cheese.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Сыр</div>
+                                                            <div class="list__drop-weight">130 г</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="burgers-image">
+                                            <img src="./section_burgers/burger_3.png" alt="Dark Beef Burger"
+                                                class="burgers-image-img">
+                                        </div>
+                                        <div class="kcal">
+                                            <div class="kcal__img">
+                                                <span class="kcal__weight">1050</span>
+                                            </div>
+                                            <span class="kcal__text">ккал</span>
+                                        </div>
+                                    </div>
+                                    <div class="burgers-text">
+                                        <h2 class="title burgers-text__title">BEEF CHICKEN BURGER</h2>
+                                        <p class="burgers__content-desc">Ваш старый добрый знакомый, с рубленым
+                                            бифштексом
+                                            из 100%
+                                            говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами,
+                                            луком,
+                                            салатом и
+                                            соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                                        <div class="burgers__order">
+                                            <h2 class="title burgers__price">560</h2>
+                                            <p class="burgers__currency">рублей</p>
+                                            <div class="burgers__btn">
+                                                <a href="#" class="button button_bg-orange">Заказать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="slider__list-item">
+                                <div class="burgers__wrap">
+                                    <div class="burgers-block">
+                                        <div class="component">
+                                            <svg class="component__icon">
+                                                <use xlink:href="/icons/burger.svg#burger"></use>
+                                            </svg>
+                                            <span class="component__text">Состав</span>
+                                            <div class="component__drop">
+                                                <ul class="list__drop">
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/beef.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Говядина</div>
+                                                            <div class="list__drop-weight">250 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/buns.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Булочки</div>
+                                                            <div class="list__drop-weight">100 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/salad.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Зелень</div>
+                                                            <div class="list__drop-weight">130 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/sauce.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Соус</div>
+                                                            <div class="list__drop-weight">150 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/cucumber.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Овощи</div>
+                                                            <div class="list__drop-weight">200 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/cheese.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Сыр</div>
+                                                            <div class="list__drop-weight">50 г</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="burgers-image">
+                                            <img src="./section_burgers/burger_4.png" alt="Dark Beef Burger"
+                                                class="burgers-image-img">
+                                        </div>
+                                        <div class="kcal">
+                                            <div class="kcal__img">
+                                                <span class="kcal__weight">900</span>
+                                            </div>
+                                            <span class="kcal__text">ккал</span>
+                                        </div>
+                                    </div>
+                                    <div class="burgers-text">
+                                        <h2 class="title burgers-text__title">CHICKEN BURGER</h2>
+                                        <p class="burgers__content-desc">Ваш старый добрый знакомый, с рубленым
+                                            бифштексом
+                                            из 100%
+                                            говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами,
+                                            луком,
+                                            салатом и
+                                            соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                                        <div class="burgers__order">
+                                            <h2 class="title burgers__price">400</h2>
+                                            <p class="burgers__currency">рублей</p>
+                                            <div class="burgers__btn">
+                                                <a href="#" class="button button_bg-orange">Заказать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="slider__list-item">
+                                <div class="burgers__wrap">
+                                    <div class="burgers-block">
+                                        <div class="component">
+                                            <svg class="component__icon">
+                                                <use xlink:href="/icons/burger.svg#burger"></use>
+                                            </svg>
+                                            <span class="component__text">Состав</span>
+                                            <div class="component__drop">
+                                                <ul class="list__drop">
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/beef.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Говядина</div>
+                                                            <div class="list__drop-weight">300 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/buns.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Булочки</div>
+                                                            <div class="list__drop-weight">100 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/salad.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Зелень</div>
+                                                            <div class="list__drop-weight">70 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/sauce.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Соус</div>
+                                                            <div class="list__drop-weight">150 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/cucumber.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Овощи</div>
+                                                            <div class="list__drop-weight">200 г</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list__drop-ingridients">
+                                                        <div class="list__drop-desc">
+                                                            <img src="icons/cheese.svg" alt class="list__drop-icon">
+                                                            <div class="list__drop-name">Сыр</div>
+                                                            <div class="list__drop-weight">80 г</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="burgers-image">
+                                            <img src="./section_burgers/burger_5.png" alt="Dark Beef Burger"
+                                                class="burgers-image-img">
+                                        </div>
+                                        <div class="kcal">
+                                            <div class="kcal__img">
+                                                <span class="kcal__weight">1100</span>
+                                            </div>
+                                            <span class="kcal__text">ккал</span>
+                                        </div>
+                                    </div>
+                                    <div class="burgers-text">
+                                        <h2 class="title burgers-text__title">BACON CHEESEBURGER</h2>
+                                        <p class="burgers__content-desc">Ваш старый добрый знакомый, с рубленым
+                                            бифштексом
+                                            из 100%
+                                            говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами,
+                                            луком,
+                                            салатом и
+                                            соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                                        <div class="burgers__order">
+                                            <h2 class="title burgers__price">495</h2>
+                                            <p class="burgers__currency">рублей</p>
+                                            <div class="burgers__btn">
+                                                <a href="#" class="button button_bg-orange">Заказать</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
+                        </ul>
+                        <div class="slider__control">
+                            <a href="#" class="slider__control_next" id="left">
+                                <svg class="arrow__icon">
+                                    <use xlink:href="./icons/arrow-scroll.svg#arrow"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="slider__control_prev" id="right">
+                                <svg class="arrow__icon">
+                                    <use xlink:href="./icons/arrow-scroll.svg#arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="team section">
+                <div class="team__right">
+                    <div class="team__wrap">
+                        <div class="title team__title">Команда</div>
+                        <div class="accordeon">
+                            <ul class="accordeon__list">
+                                <li class="accordeon__item">
+                                    <a href="#" class="accordeon__down">
+                                        <div class="subtitle">Дэниэл Редклиф</div>
+                                    </a>
+                                    <div class="accordeon__label">
+                                        <div class="accordeon__content">
+                                            <div class="teammate">
+                                                <div class="teammate__icon">
+                                                    <img src="/section_team/aphex.jpg" class="teammate__icon-img">
+                                                </div>
+                                                <div class="teammate__info">
+                                                    <div class="teammate__title">Оператор</div>
+                                                    <div class="teammate__desc">
+                                                        <p>С радостью поможет подобрать идеальный бургер и оформить
+                                                            заказ.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordeon__item">
+                                    <a href="#" class="accordeon__down">
+                                        <div class="subtitle">Ричард Джеймс</div>
+                                    </a>
+                                    <div class="accordeon__label">
+                                        <div class="accordeon__content">
+                                            <div class="teammate">
+                                                <div class="teammate__icon">
+                                                    <img src="/section_team/aphex.jpg" class="teammate__icon-img">
+                                                </div>
+                                                <div class="teammate__info">
+                                                    <div class="teammate__title">Оператор</div>
+                                                    <div class="teammate__desc">
+                                                        <p>С радостью поможет подобрать идеальный бургер и оформить
+                                                            заказ.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordeon__item">
+                                    <a href="#" class="accordeon__down">
+                                        <div class="subtitle">Джейк Финн</div>
+                                    </a>
+                                    <div class="accordeon__label">
+                                        <div class="accordeon__content">
+                                            <div class="teammate">
+                                                <div class="teammate__icon">
+                                                    <img src="/section_team/aphex.jpg" class="teammate__icon-img">
+                                                </div>
+                                                <div class="teammate__info">
+                                                    <div class="teammate__title">Оператор</div>
+                                                    <div class="teammate__desc">
+                                                        <p>С радостью поможет подобрать идеальный бургер и оформить
+                                                            заказ.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="accordeon__item">
+                                    <a href="#" class="accordeon__down">
+                                        <div class="subtitle">Николай Иванов</div>
+                                    </a>
+                                    <div class="accordeon__label">
+                                        <div class="accordeon__content">
+                                            <div class="teammate">
+                                                <div class="teammate__icon">
+                                                    <img src="/section_team/aphex.jpg" class="teammate__icon-img">
+                                                </div>
+                                                <div class="teammate__info">
+                                                    <div class="teammate__title">Оператор</div>
+                                                    <div class="teammate__desc">
+                                                        <p>С радостью поможет подобрать идеальный бургер и оформить
+                                                            заказ.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="menu section">
+                <h2 class="title menu__title">Меню</h2>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__action" style="background-image: url('/section_menu/burger3.jpg')">
+                            <div class="menu__subtitle">Для мясоедов</div>
+                        </a>
+                        <div class="menu__accordeon">
+                            <div class="menu__accordeon-wrap">
+                                <div class="menu__accordeon-desc">
+                                    <p class="menu__accordeon-text">
+                                        Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
+                                        редуцирует конструктивный механизм сочленений. Лирический субъект начинает
+                                        диссонансный
+                                        анжамбеман. Наш современник стал особенно чутко относиться к слову, однако
+                                        механизм
+                                        сочленений неустойчив. Модальность высказывания, как справедливо считает
+                                        И.Гальперин,
+                                        пространственно выбирает метр.
+                                        Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
+                                        редуцирует конструктивный механизм сочленений. Лирический субъект начинает
+                                        диссонансный
+                                        анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__action" style="background-image: url('/section_menu/burger1.jpg')">
+                            <div class="menu__subtitle">Вегетарианское</div>
+                        </a>
+                        <div class="menu__accordeon">
+                            <div class="menu__accordeon-wrap">
+                                <div class="menu__accordeon-desc">
+                                    <p class="menu__accordeon-text">
+                                        Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
+                                        редуцирует конструктивный механизм сочленений. Лирический субъект начинает
+                                        диссонансный
+                                        анжамбеман. Наш современник стал особенно чутко относиться к слову, однако
+                                        механизм
+                                        сочленений неустойчив. Модальность высказывания, как справедливо считает
+                                        И.Гальперин,
+                                        пространственно выбирает метр.
+                                        Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
+                                        редуцирует конструктивный механизм сочленений. Лирический субъект начинает
+                                        диссонансный
+                                        анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__action" style="background-image: url('/section_menu/burger2.jpg')">
+                            <div class="menu__subtitle">Диетическое</div>
+                        </a>
+                        <div class="menu__accordeon">
+                            <div class="menu__accordeon-wrap">
+                                <div class="menu__accordeon-desc">
+                                    <p class="menu__accordeon-text">
+                                        Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
+                                        редуцирует конструктивный механизм сочленений. Лирический субъект начинает
+                                        диссонансный
+                                        анжамбеман. Наш современник стал особенно чутко относиться к слову, однако
+                                        механизм
+                                        сочленений неустойчив. Модальность высказывания, как справедливо считает
+                                        И.Гальперин,
+                                        пространственно выбирает метр.
+                                        Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование
+                                        редуцирует конструктивный механизм сочленений. Лирический субъект начинает
+                                        диссонансный
+                                        анжамбеман. Наш современник стал особенно чутко относиться к слову.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="reviews section">
+                <div class="reviews__content">
+                    <ul class="reviews__list">
+                        <li class="reviews__item" style="background-image: url(/section_reviews/review8.jpg)">
+                            <div class="reviews__item-hover">
+                                <div class="reviews__title">Константин Спилберг</div>
+                                <p class="reviews__text">
+                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть...
+                                    Никогда не
+                                    думал, что
+                                    булочки могут быть такими мягкими, котлектка такой сочной, а сыр таким
+                                    расплавленным.
+                                </p>
+                                <div class="reviews__button">
+                                    <a href="#" class="button btn_background_black btn-desktop">Подробнее</a>
+                                    <a href="#" class="button btn_background_black btn-phones">Читать отзыв</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reviews__item" style="background-image: url(/section_reviews/review6.jpg)">
+                            <div class="reviews__item-hover">
+                                <div class="reviews__title">Константин Спилберг</div>
+                                <p class="reviews__text">
+                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть...
+                                    Никогда не
+                                    думал, что
+                                    булочки могут быть такими мягкими, котлектка такой сочной, а сыр таким
+                                    расплавленным.
+                                </p>
+                                <div class="reviews__button">
+                                    <a href="#" class="button btn_background_black btn-desktop">Подробнее</a>
+                                    <a href="#" class="button btn_background_black btn-phones">Читать отзыв</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reviews__item" style="background-image: url(/section_reviews/review4.jpg)">
+                            <div class="reviews__item-hover">
+                                <div class="reviews__title">Константин Спилберг</div>
+                                <p class="reviews__text">
+                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть...
+                                    Никогда не
+                                    думал, что
+                                    булочки могут быть такими мягкими, котлектка такой сочной, а сыр таким
+                                    расплавленным.
+                                </p>
+                                <div class="reviews__button">
+                                    <a href="#" class="button btn_background_black btn-desktop">Подробнее</a>
+                                    <a href="#" class="button btn_background_black btn-phones">Читать отзыв</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reviews__item" style="background-image: url(/section_reviews/review2.jpg)">
+                            <div class="reviews__item-hover">
+                                <div class="reviews__title">Константин Спилберг</div>
+                                <p class="reviews__text">
+                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть...
+                                    Никогда не
+                                    думал, что
+                                    булочки могут быть такими мягкими, котлектка такой сочной, а сыр таким
+                                    расплавленным.
+                                </p>
+                                <div class="reviews__button">
+                                    <a href="#" class="button btn_background_black btn-desktop">Подробнее</a>
+                                    <a href="#" class="button btn_background_black btn-phones">Читать отзыв</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reviews__item" style="background-image: url(/section_reviews/review7.jpg)">
+                            <div class="reviews__item-hover">
+                                <div class="reviews__title">Константин Спилберг</div>
+                                <p class="reviews__text">
+                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть...
+                                    Никогда не
+                                    думал, что
+                                    булочки могут быть такими мягкими, котлектка такой сочной, а сыр таким
+                                    расплавленным.
+                                </p>
+                                <div class="reviews__button">
+                                    <a href="#" class="button btn_background_black btn-desktop">Подробнее</a>
+                                    <a href="#" class="button btn_background_black btn-phones">Читать отзыв</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reviews__item" style="background-image: url(/section_reviews/review5.jpg)">
+                            <div class="reviews__item-hover">
+                                <div class="reviews__title">Константин Спилберг</div>
+                                <p class="reviews__text">
+                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть...
+                                    Никогда не
+                                    думал, что
+                                    булочки могут быть такими мягкими, котлектка такой сочной, а сыр таким
+                                    расплавленным.
+                                </p>
+                                <div class="reviews__button">
+                                    <a href="#" class="button btn_background_black btn-desktop">Подробнее</a>
+                                    <a href="#" class="button btn_background_black btn-phones">Читать отзыв</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reviews__item" style="background-image: url(/section_reviews/review3.jpg)">
+                            <div class="reviews__item-hover">
+                                <div class="reviews__title">Константин Спилберг</div>
+                                <p class="reviews__text">
+                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть...
+                                    Никогда не
+                                    думал, что
+                                    булочки могут быть такими мягкими, котлектка такой сочной, а сыр таким
+                                    расплавленным.
+                                </p>
+                                <div class="reviews__button">
+                                    <a href="#" class="button btn_background_black btn-desktop">Подробнее</a>
+                                    <a href="#" class="button btn_background_black btn-phones">Читать отзыв</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="reviews__item" style="background-image: url(/section_reviews/review1.jpg)">
+                            <div class="reviews__item-hover">
+                                <div class="reviews__title">Константин Спилберг</div>
+                                <p class="reviews__text">
+                                    Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть...
+                                    Никогда не
+                                    думал, что
+                                    булочки могут быть такими мягкими, котлектка такой сочной, а сыр таким
+                                    расплавленным.
+                                </p>
+                                <div class="reviews__button">
+                                    <a href="#" class="button btn_background_black btn-desktop">Подробнее</a>
+                                    <a href="#" class="button btn_background_black btn-phones">Читать отзыв</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="order section">
+                <div class="container order-column">
+                    <h2 class="title order__title">Закажите доставку</h2>
+                    <form class="form">
+                        <div class="form__content">
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <span class="form__block-title">Имя</span>
+                                    <input type="text" class="form__block-input" placeholder="Введите имя">
+                                </label>
+                                <label class="form__block">
+                                    <span class="form__block-title">Телефон</span>
+                                    <input type="text" class="form__block-input" placeholder="Введите номер">
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <span class="form__block-title">Улица</span>
+                                    <input type="text" class="form__block-input" placeholder="Введите название улицы">
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <span class="form__block-title">Дом</span>
+                                    <input type="text" class="form__block-input">
+                                </label>
+                                <label class="form__block">
+                                    <span class="form__block-title">Корпус</span>
+                                    <input type="text" class="form__block-input">
+                                </label>
+                                <label class="form__block">
+                                    <span class="form__block-title">Квартира</span>
+                                    <input type="text" class="form__block-input">
+                                </label>
+                                <label class="form__block">
+                                    <span class="form__block-title">Этаж</span>
+                                    <input type="text" class="form__block-input">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__content">
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <span class="form__block-title">Комментарий</span>
+                                    <textarea class="form__block-input form__block-input--textarea"
+                                        placeholder="Введите текст"></textarea>
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__radio">
+                                    <input type="radio" name="change" class="form__radio-choose">
+                                    <span class="form__radio-fake"></span>
+                                    <span class="form__radio-desc">Потребуется сдача</span>
+                                </label>
+                                <label class="form__radio">
+                                    <input type="radio" name="change" class="form__radio-choose">
+                                    <span class="form__radio-fake"></span>
+                                    <span class="form__radio-desc">Оплата по карте</span>
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__radio form__radio_checkbox">
+                                    <input type="checkbox" name="don't recall" class="form__radio-choose">
+                                    <span class="form__radio-square"></span>
+                                    <span class="form__radio-desc">Не перезванивать</span>
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <input type="submit" class="button button_bg-orange" value="Заказать">
+                                <input type="reset" class="button btn_bg_none" value="Очистить">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="map section">
+                <div class="map__wrap"></div>
+                <div class="map__footer">
+                    <footer class="footer">
+                        <div class="container footer__container">
+                            <div class="contacts">
+                                <div class="contacts__address">
+                                    <address class="address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</address>
+                                </div>
+                                <div class="contacts__phone">
+                                    <a href="tel:+78123771377" class="phone">
+                                        <svg class="phone__icon">
+                                            <use xlink:href="./icons/phone.svg#phone"></use>
+                                        </svg>+7 (812) 377-13-77
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="socials">
+                                <ul class="socials__list">
+                                    <li class="socials__item">
+                                        <a href="#" class="socials__link">
+                                            <svg class="socials__icon">
+                                                <use xlink:href="./icons/vk.svg#vk"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="#" class="socials__link">
+                                            <svg class="socials__icon">
+                                                <use xlink:href="./icons/fb.svg#fb"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="#" class="socials__link">
+                                            <svg class="socials__icon">
+                                                <use xlink:href="./icons/inst.svg#inst"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="socials__item">
+                                        <a href="#" class="socials__link">
+                                            <svg class="socials__icon">
+                                                <use xlink:href="./icons/twitter.svg#tw"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </section>
+        </div>
+    </div>
+    <nav class="fixed-menu">
+        <ul class="fixed-menu__list">
+            <li class="fixed-menu__item active">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+            <li class="fixed-menu__item">
+                <a href="" class="fixed-menu__link"></a>
+            </li>
+        </ul>
+    </nav>
+    <script src="/accovert.js"></script>
+    <script src="/accohor.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
