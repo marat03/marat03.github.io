@@ -1,6 +1,6 @@
-const slide = document.querySelectorAll ('.accordeon__item');
+const accoslide = document.querySelectorAll ('.accordeon__item');
 
-for (item of slide) {
+for (item of accoslide) {
     item.addEventListener ('click', e => {
         const curItem = e.currentTarget;
         const content = curItem.querySelector(".accordeon__label");
