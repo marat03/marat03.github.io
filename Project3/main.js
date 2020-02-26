@@ -24,7 +24,7 @@ const performTransition = sectionEq => {
     setTimeout(() =>{
        inscroll = false;
 
-    }, 1000 + 300); //продолжительность transition + 300мс - время зав. тачпада
+    }, 1000 + 300);
 };     
 
 
