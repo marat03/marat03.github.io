@@ -5,7 +5,7 @@ let inscroll = false;
 
 const md = new MobileDetect(window.navigator.userAgent);
 
-const isMboile = md.mobile();
+const isMobile = md.mobile();
 
 const switchActiveClassInsideMenu = menuItemIndex => {
     $('.fixed-menu__item').eq(menuItemIndex).addClass('active').siblings().removeClass('active');
