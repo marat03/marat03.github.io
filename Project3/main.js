@@ -67,6 +67,10 @@ $('.wrapper').on('wheel', e =>{
     }
 });
 
+$('.wrapper').on('touchmove', e => {
+    e.preventDefault();
+});
+
 $(document).on('keydown', e =>{
 
     switch(e.keyCode) {
