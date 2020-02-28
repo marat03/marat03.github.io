@@ -3,6 +3,10 @@ const display = $(".maincontent");
 
 let inscroll = false;
 
+const md = new MobileDetect(window.navigator.userAgent);
+
+const isMboile = md.mobile();
+
 const switchActiveClassInsideMenu = menuItemIndex => {
     $('.fixed-menu__item').eq(menuItemIndex).addClass('active').siblings().removeClass('active');
 }
