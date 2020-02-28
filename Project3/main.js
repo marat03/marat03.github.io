@@ -85,7 +85,7 @@ $('[data-scroll-to]').on('click', e => {
 if (isMobile) {
     $(window).swipe({
         swipe: function(event, direction){
-            const nextOrPrev = direction === 'up' ? 'next' : 'down'
+            const nextOrPrev = direction === 'up' ? 'next' : 'prev'
             scrollToSection(nextOrPrev);
         }
     });
