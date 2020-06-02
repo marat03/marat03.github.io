@@ -5,7 +5,6 @@
 
 .burgers__wrap{
     display: flex;
-    align-items: center;  
     @include tablets{
         justify-content: center;
         flex-direction: column;
